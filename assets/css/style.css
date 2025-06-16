@@ -1,0 +1,98 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Montserrat', sans-serif; /* Fonte moderna e legível */
+    margin: 0;
+    padding: 0;
+    background-color: #F3EFE9; /* Fundo suave, mas com um toque de modernidade */
+    color: #333; /* Texto principal escuro para bom contraste */
+    line-height: 1.6;
+}
+
+/* Importar Google Font - adicione isso no <head> do seu HTML se quiser usar Montserrat */
+/* <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> */
+
+.container {
+    max-width: 1000px; /* Largura um pouco menor para foco no conteúdo */
+    margin: 30px auto; /* Mais espaço vertical */
+    padding: 30px;
+    background-color: #F3EFE9; /* Fundo para o conteúdo principal */
+    border-radius: 10px; /* Bordas arredondadas para um toque moderno */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Sombra mais pronunciada */
+    text-align: center; /* Centraliza o texto dentro do container */
+}
+
+/* Cabeçalho */
+h1 {
+    color: #FF5722; /* Laranja vibrante para chamar a atenção */
+    font-size: 2.8em; /* Tamanho maior para o título */
+    margin-bottom: 15px;
+    text-transform: uppercase; /* Deixa o título em maiúsculas */
+    letter-spacing: 2px; /* Espaçamento entre letras */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil no texto */
+}
+
+
+/* Estilos para o PDF - Agora com mais destaque */
+.pdf-showcase {
+    position: relative;
+    padding-bottom: 75%; /* Proporção 4:3 para o PDF */
+    height: 0;
+    overflow: hidden; /* Garante que o conteúdo não vaze */
+    border: 5px solid #00BCD4; /* Borda turquesa vibrante em volta do PDF */
+    border-radius: 8px; /* Bordas arredondadas para o iframe */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra para destacar o PDF */
+}
+
+.pdf-showcase iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none; /* Remove a borda padrão do iframe */
+}
+
+/* Botão de Download (opcional, mas recomendado para mobilidade) */
+.download-button {
+    display: inline-block;
+    background-color: #4CAF50; /* Verde chamativo para o botão */
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 8px;
+    margin-top: 30px;
+    transition: background-color 0.3s ease; /* Transição suave no hover */
+}
+
+.download-button:hover {
+    background-color: #45a049; /* Escurece no hover */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em; /* Título menor em telas menores */
+    }
+
+    .pdf-showcase {
+        padding-bottom: 120%; /* Proporção mais vertical para melhor visualização em celulares */
+    }
+
+    .download-button {
+        padding: 12px 25px;
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .pdf-showcase {
+        padding-bottom: 150%; /* Ainda mais vertical para celulares pequenos */
+    }
+}
