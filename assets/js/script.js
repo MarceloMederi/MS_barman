@@ -1,6 +1,6 @@
 const pages = document.querySelectorAll('.catalog-page');
-const prevButton = document.querySelector('.prev-button');
-const nextButton = document.querySelector('.next-button');
+const prevButton = document.querySelector('.prev-button'); // Continua selecionando a classe
+const nextButton = document.querySelector('.next-button'); // Continua selecionando a classe
 const currentPageSpan = document.getElementById('current-page');
 const totalPagesSpan = document.getElementById('total-pages');
 let currentPageIndex = 0;
