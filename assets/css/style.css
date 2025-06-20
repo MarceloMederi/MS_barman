@@ -34,7 +34,7 @@ body {
 }
 
 .logo {
-  width: 70px;
+  width: 10%;
   height: auto;
   animation: logo-in 5s ease-out;
 }
@@ -51,7 +51,7 @@ body {
 }
 
 .brand-name {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: #ffcc70;
   letter-spacing: 1px;
@@ -73,7 +73,7 @@ body {
   text-align: center;
   max-width: 900px;
   width: 100%;
-  margin: 0 auto; /* CENTRALIZA */
+  margin: 80px auto; /* CENTRALIZA */
   background-color: #2d2d3f;
   padding: 30px;
   border-radius: 12px;
