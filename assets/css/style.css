@@ -60,6 +60,16 @@ h1 {
   font-size: 1.8rem;
   margin-bottom: 25px;
   color: #ffcc70;
+  animation: h1 3s infinite;
+}
+
+@keyframes h1 {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.5; /* Torna o texto semi-transparente */
+  }
 }
 
 .pdf-showcase {
