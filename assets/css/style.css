@@ -177,4 +177,9 @@ a:hover {
     padding: 4px 8px; /* Ainda menor em telas muito pequenas */
     font-size: 1.1em;
   }
+
+  a {
+      font-size: 0.9rem; /* Ajusta o tamanho da fonte em telas menores */
+      padding: 8px; /* Ajusta o padding em telas menores */
+  }
 }
