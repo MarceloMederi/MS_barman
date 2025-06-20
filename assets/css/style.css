@@ -154,14 +154,7 @@ a {
   margin-top: 20px; /* Espaço adicional acima do link */
   display: block; /* Garante que o link seja um bloco separado */
   transition: transform 0.3s ease; /* Adiciona uma transição suave */
-  animation: blink 1s infinite;
-}
-
-a:hover {
-  color: #ffc043; /* Muda a cor do texto ao passar o mouse */
-  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
-  transform: scale(1.1);
-  text-shadow: 0 0 10px #ffc043, 0 0 20px #ffc043; /* Efeito de brilho */
+  animation: blink 2s infinite;
 }
 
 @keyframes blink {
@@ -172,6 +165,14 @@ a:hover {
     opacity: 0.5; /* Torna o texto semi-transparente */
   }
 }
+
+a:hover {
+  color: #ffc043; /* Muda a cor do texto ao passar o mouse */
+  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+  transform: scale(1.1);
+  text-shadow: 0 0 10px #ffc043, 0 0 20px #ffc043; /* Efeito de brilho */
+}
+
 
 .contato {
   font-family: 'Montserrat', sans-serif;
