@@ -28,8 +28,9 @@ body {
 .navbar-center {
   display: flex;
   align-items: center;
-  justify-content: center; /* CENTRALIZA HORIZONTALMENTE */
+  justify-content: center;
   gap: 10px;
+  flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte se não houver espaço */
 }
 
 .logo {
@@ -181,5 +182,9 @@ a:hover {
   a {
       font-size: 0.9rem; /* Ajusta o tamanho da fonte em telas menores */
       padding: 8px; /* Ajusta o padding em telas menores */
+  }
+
+  span {
+      font-size: 0.9rem; /* Ajusta o tamanho da fonte em telas menores */
   }
 }
