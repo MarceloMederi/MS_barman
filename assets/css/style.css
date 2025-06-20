@@ -217,11 +217,12 @@ a:hover {
   h1 {
     font-size: 1.4rem;
   }
+  .brand-name {
+    font-size: 1.2rem;
+  }
 
-  /* O tamanho dos botões inline já foi ajustado, mas se precisar de mais ajustes específicos para mobile */
-  .nav-button {
-    padding: 4px 8px; /* Ainda menor em telas muito pequenas */
-    font-size: 1.1em;
+  .logo {
+    width: 32px;
   }
 
   a {
