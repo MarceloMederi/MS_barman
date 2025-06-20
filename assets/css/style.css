@@ -139,23 +139,23 @@ h1 {
 }
 
 a {
-    text-decoration: none;
-    color: #ffcc70;
-    margin-top: 20px; /* Espaço adicional acima do link */
-    display: block; /* Garante que o link seja um bloco separado */
+  text-decoration: none;
+  color: #ffcc70;
+  margin-top: 20px; /* Espaço adicional acima do link */
+  display: block; /* Garante que o link seja um bloco separado */
+  transition: transform 0.3s ease; /* Adiciona uma transição suave */
 }
 
 a:hover {
-    color: #ffc043; /* Muda a cor do texto ao passar o mouse */
-    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+  color: #ffc043; /* Muda a cor do texto ao passar o mouse */
+  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+  transform: scale(1.1);
 }
+
 
 .contato {
-    transition: transform 0.3s ease; /* Adiciona uma transição suave */
-}
-
-.contato:hover {
-  transform: scale(1.1);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
 }
 
 @media (max-width: 480px) {
@@ -180,11 +180,11 @@ a:hover {
   }
 
   a {
-      font-size: 0.9rem; /* Ajusta o tamanho da fonte em telas menores */
-      padding: 8px; /* Ajusta o padding em telas menores */
+    font-size: 0.9rem; /* Ajusta o tamanho da fonte em telas menores */
+    padding: 8px; /* Ajusta o padding em telas menores */
   }
 
   span {
-      font-size: 0.9rem; /* Ajusta o tamanho da fonte em telas menores */
+    font-size: 0.9rem; /* Ajusta o tamanho da fonte em telas menores */
   }
 }
