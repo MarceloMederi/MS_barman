@@ -150,6 +150,7 @@ a:hover {
   color: #ffc043; /* Muda a cor do texto ao passar o mouse */
   text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
   transform: scale(1.1);
+  text-shadow: 0 0 10px #ffc043, 0 0 20px #ffc043; /* Efeito de brilho */
 }
 
 
