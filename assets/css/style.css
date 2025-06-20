@@ -154,7 +154,7 @@ a {
   margin-top: 20px; /* Espaço adicional acima do link */
   display: block; /* Garante que o link seja um bloco separado */
   transition: transform 0.3s ease; /* Adiciona uma transição suave */
-  animation: blink 2s infinite;
+  animation: blink 3s infinite;
 }
 
 @keyframes blink {
