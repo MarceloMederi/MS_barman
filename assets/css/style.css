@@ -95,14 +95,14 @@ h1 {
 
 /* NOVO ESTILO PARA O INDICADOR DE PÁGINA E SEUS BOTÕES */
 .page-indicator {
-    margin-top: 15px; /* Mais espaço acima do indicador de página */
+    margin-top: 20px; /* Aumenta o espaço acima do indicador de página */
     font-size: 1em;
     color: #ffcc70; /* Cor do texto do indicador de página */
     font-weight: bold;
     display: flex; /* Transforma em um flex container */
     align-items: center; /* Alinha os itens verticalmente no centro */
     justify-content: center; /* Centraliza os itens horizontalmente */
-    gap: 10px; /* Espaçamento entre os itens (botões e texto) */
+    gap: 15px; /* Aumenta o espaçamento entre os itens (botões e texto) */
 }
 
 /* ESTILO DOS BOTÕES DE NAVEGAÇÃO AGORA DENTRO DO INDICADOR DE PÁGINA */
@@ -124,6 +124,7 @@ h1 {
 .nav-button:hover {
     background-color: #ffc043; /* Cor ao passar o mouse */
     transform: scale(1.05); /* Pequena animação ao passar o mouse */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra ao passar o mouse */
 }
 
 .nav-button:disabled {
@@ -132,14 +133,28 @@ h1 {
     transform: scale(1); /* Sem animação para desabilitado */
 }
 
-/* Você pode remover as regras .prev-button e .next-button antigas se existirem */
-/* Ex:
-.prev-button { left: 10px; }
-.next-button { right: 10px; }
-*/
+.nav-button:focus, .contato:focus {
+    outline: 2px dashed #ffcc70; /* Adiciona um contorno visível ao foco */
+}
 
-.download-button {
-  display: none; /* Esconde o botão de download */
+a {
+    text-decoration: none;
+    color: #ffcc70;
+    margin-top: 20px; /* Espaço adicional acima do link */
+    display: block; /* Garante que o link seja um bloco separado */
+}
+
+a:hover {
+    color: #ffc043; /* Muda a cor do texto ao passar o mouse */
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+.contato {
+    transition: transform 0.3s ease; /* Adiciona uma transição suave */
+}
+
+.contato:hover {
+  transform: scale(1.1);
 }
 
 @media (max-width: 480px) {
