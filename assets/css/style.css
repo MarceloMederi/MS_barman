@@ -36,6 +36,18 @@ body {
 .logo {
   width: 40px;
   height: auto;
+  animation: logo-in 3s ease-out;
+}
+
+@keyframes logo-in {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .brand-name {
@@ -43,6 +55,18 @@ body {
   font-weight: 700;
   color: #ffcc70;
   letter-spacing: 1px;
+  animation: brand-in 10s ease-out;
+}
+
+@keyframes brand-in {
+  0% {
+    transform: translateX(-10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .container {
