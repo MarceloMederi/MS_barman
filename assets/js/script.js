@@ -55,5 +55,31 @@ document.addEventListener('keydown', (e) => {
   }
 });
 
+// Função para abrir a imagem em tela cheia
+function openFullscreenImage(imgElement) {
+  const fullscreenImage = document.createElement('img');
+  fullscreenImage.src = imgElement.src;
+  fullscreenImage.style.position = 'fixed';
+  fullscreenImage.style.top = '0';
+  fullscreenImage.style.left = '0';
+  fullscreenImage.style.width = '100%';
+  fullscreenImage.style.height = '100%';
+  fullscreenImage.style.objectFit = 'contain';
+  fullscreenImage.style.zIndex = '1000';
+  fullscreenImage.style.cursor = 'pointer';
+
+  // Adiciona um evento de clique para sair do modo de tela cheia
+  fullscreenImage.addEventListener('click', () => {
+    document.body.removeChild(fullscreenImage);
+  });
+
+  document.body.appendChild(fullscreenImage);
+}
+
+// Adiciona o evento de clique a cada imagem
+pages.forEach(page => {
+  page.addEventListener('click', () => openFullscreenImage(page));
+});
+
 // Inicializa a exibição na primeira página quando o script é carregado
 showPage(0);
