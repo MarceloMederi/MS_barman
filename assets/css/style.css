@@ -80,8 +80,15 @@ body {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
-h1,h6 {
+h1 {
   font-size: 1.8rem;
+  margin-bottom: 25px;
+  color: #ffcc70;
+  animation: h1 3s infinite;
+}
+
+h6 {
+  font-size: 1rem;
   margin-bottom: 25px;
   color: #ffcc70;
   animation: h1 3s infinite;
